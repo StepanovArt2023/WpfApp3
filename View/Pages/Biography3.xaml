@@ -1,0 +1,233 @@
+﻿<Page x:Class="WpfApp3.View.Pages.Biography3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp3.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Biography3">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="260*"/>
+            <ColumnDefinition Width="260*"/>
+            <ColumnDefinition Width="260*"/>
+            <ColumnDefinition Width="60*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Border Grid.ColumnSpan="6"
+                Grid.RowSpan="8">
+            <Image Source="/Images/Background7.png" Stretch="Fill"/>
+        </Border>
+        <Border Grid.Column="2" Grid.Row="3" Grid.RowSpan="3">
+            <Image Source="/Images/SuguruGetoandGojoPNGImage 1.png" />
+        </Border>
+
+        <TextBlock
+     Grid.Column="2"
+     Grid.Row="2"
+    Foreground="White" 
+    FontFamily="Jujutsu Kaisen"
+    FontSize="28"
+    Height="30"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    x:Name="txt1">
+Biography Gojo Satoru
+        </TextBlock>
+
+        <Image Source="/Images/Logo.png"
+      Width="20"
+      Height="50" 
+      HorizontalAlignment="Left" 
+      Grid.Column="1"/>
+
+        <TextBlock FontFamily="Kanit" 
+      FontSize="14" 
+      Foreground="White"
+      Grid.Column="1"   
+      Text="Home"
+      Grid.Row="0" 
+      HorizontalAlignment="Right"
+      VerticalAlignment="Center"
+      Opacity="0.5" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"
+      >
+        </TextBlock>
+
+        <TextBlock FontFamily="Kanit"
+      FontSize="14"
+      Foreground="White" 
+      Grid.Column="2"  
+      Text="Biography" 
+      Grid.Row="0" 
+      HorizontalAlignment="Center"
+      VerticalAlignment="Center"
+      >
+        </TextBlock>
+
+        <TextBlock 
+        FontFamily="Kanit"
+        FontSize="14" 
+        Foreground="White" 
+        Grid.Column="3"  
+        Text="Gallery"
+        Grid.Row="0" 
+        HorizontalAlignment="Left"
+        VerticalAlignment="Center"
+        Opacity="0.5" 
+        MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_1">   
+        </TextBlock>
+
+        <TextBlock 
+Grid.Row="4"
+Grid.Column="3"
+FontFamily="Kanit"
+Foreground="White"
+FontSize="10"
+HorizontalAlignment="Right"
+VerticalAlignment="Top"
+TextWrapping="Wrap"
+TextAlignment="Right" 
+FontWeight="SemiBold">
+Humanity
+        </TextBlock>
+
+        <TextBlock 
+Grid.Row="4"
+Grid.Column="1"
+FontFamily="Kanit"
+Foreground="White"
+FontSize="10"
+HorizontalAlignment="Left"
+VerticalAlignment="Top"
+TextWrapping="Wrap"
+TextAlignment="Right" 
+FontWeight="SemiBold">
+Personality
+        </TextBlock>
+
+        <TextBlock 
+            Grid.Row="6" 
+            Grid.Column="2"
+            FontFamily="Kanit"
+            Foreground="White"
+            FontSize="14"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            >
+            Interesting facts
+        </TextBlock>
+
+        <TextBlock 
+    Grid.Row="5" 
+    Grid.Column="1"
+    FontFamily="Kanit"
+    Foreground="White"
+    FontSize="9"
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center"
+    TextWrapping="Wrap"
+    TextAlignment="Left"
+    ><Run Text="Satoru is a very complex person: serene and sometimes playful with his students and colleagues, but at the same time extremely callous and cruel towards the &quot;top&quot; of the world of magicians. "/><LineBreak/><Run/><LineBreak/><Run Text="Satoru is so confident in his skills and reputation as the strongest magician that he is not at all afraid of Sukuna's threats in his direction. On the contrary, he quite casually claims that he would have defeated the King of Curses easily. "/><LineBreak/><Run/><LineBreak/><Run Text="Satoru's endgame is to reform the jujutsu world from the bottom-up through education. He seeks to foster a new generation of sorcerers that he hopes will one day become his equals."/></TextBlock>
+
+        <TextBlock 
+Grid.Row="5" 
+Grid.Column="3"
+FontFamily="Kanit"
+Foreground="White"
+FontSize="9"
+HorizontalAlignment="Center"
+VerticalAlignment="Center"
+TextWrapping="Wrap"
+TextAlignment="Right"><Run Text="Nevertheless, despite his arrogance and strength, Satoru is more human than he seems at first glance. After defeating Toji, Satoru sadly took away Riko's corpse, showing that although his recent vain victory temporarily clouded his feelings, he still felt some grief over her death. Moreover, Satoru was later visibly horrified to learn that Suguru, his only best friend, had become a deadly spellcaster. Satoru tried to reason with his friend, but eventually understood and accepted that he had lost the only dear person. After having to end Suguru before new disasters broke out, it was Satoru's injury due to the loss of his best friend that caused his final downfall in Shibuya. "/><LineBreak/><Run/><LineBreak/><Run Text="Satoru Gojo died on December 24, 2018 in a battle with Ryomen Sukuna..."/></TextBlock>
+
+
+        <TextBlock 
+            Grid.Row="6" 
+            Grid.Column="2"
+            FontFamily="Kanit"
+            Foreground="White"
+            FontSize="10"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            TextWrapping="Wrap"
+            TextAlignment="Center"
+            Height="60">
+
+           
+        </TextBlock>
+
+        <TextBlock 
+    Grid.Row="6" 
+    Grid.Column="1"
+    FontFamily="Kanit"
+    Foreground="White"
+    FontSize="10"
+    HorizontalAlignment="Left"
+    VerticalAlignment="Bottom"
+    TextWrapping="Wrap"
+    TextAlignment="Left"
+    
+            Width="200">
+    Satoru can do anything — just try it, but he tries to avoid it. He believes that the next generation should be given a chance to be the best at something.
+        </TextBlock>
+
+        <TextBlock 
+Grid.Row="6" 
+Grid.Column="2"
+FontFamily="Kanit"
+Foreground="White"
+FontSize="10"
+HorizontalAlignment="Center"
+VerticalAlignment="Center"
+TextWrapping="Wrap"
+TextAlignment="Center"
+
+        Width="200">
+Satoru placed third in the First Popularity Poll with 16,923 votes.
+        </TextBlock>
+
+        <TextBlock 
+    Grid.Row="6" 
+    Grid.Column="3"
+    FontFamily="Kanit"
+    Foreground="White"
+    FontSize="10"
+    HorizontalAlignment="Right"
+    VerticalAlignment="Bottom"
+    TextWrapping="Wrap"
+    TextAlignment="Right"
+    Height="60"
+            Width="200">
+    He started eating a lot of sweets to stimulate the brain (which is necessary in his damn technique).
+        </TextBlock>
+
+        <Image Source="/Images/Назад1.png"
+  Height="18"
+  Width="18"
+  Grid.Column="0"
+  Grid.Row="7" 
+  Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+
+        <Image Source="/Images/Домой.png"
+      Height="18"
+      Width="18"
+      Grid.Column="5"
+      Grid.Row="7" 
+      Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"      />
+
+
+    </Grid>
+</Page>
